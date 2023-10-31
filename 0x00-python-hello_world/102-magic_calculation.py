@@ -1,2 +1,2 @@
-#!/bin/bash
-python3 -m compileall -b $PYFILE
+def magic_calculation(a, b):
+    return (98 + (a ** b))
