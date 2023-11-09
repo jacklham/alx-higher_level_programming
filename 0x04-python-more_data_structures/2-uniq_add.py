@@ -2,8 +2,7 @@
 
 
 def uniq_add(my_list=[]):
-    # Create a set from the list to remove duplicates
-    unique_set = set(my_list)
-    
-    # Sum all elements in the set and return the result
-    return sum(unique_set)
+    sum = 0
+    for i in set(my_list):
+        sum += i
+    return (sum)
