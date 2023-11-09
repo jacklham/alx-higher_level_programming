@@ -2,13 +2,12 @@
 
 
 def square_matrix_simple(matrix=[]):
-    # Create a new matrix with the same dimensions
-    new_matrix = [row[:] for row in matrix]
-    
-    # Iterate over each element in the matrix
-    for i in range(len(new_matrix)):
-        for j in range(len(new_matrix[i])):
-            # Square each element
-            new_matrix[i][j] = new_matrix[i][j] ** 2
-            
-    return new_matrix
+    """
+    first method using map and lambda
+
+    lamb = lambda x: x**2
+    return list(map(lambda row: list(map(lamb, row)), matrix))
+
+    Second method below using list comprehension
+    """
+    return [[x**2 for x in row] for row in matrix]
