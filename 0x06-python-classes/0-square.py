@@ -2,4 +2,4 @@
 class Square:
 
     """This defines an empty Square class"""
-    print("")
+    pass
