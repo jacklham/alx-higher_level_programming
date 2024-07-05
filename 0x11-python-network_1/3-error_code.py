@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """using urllib to send a request"""
 
@@ -19,4 +18,3 @@ if __name__ == "__main__":
     except error.HTTPError as e:
         # Handle HTTP errors and print the HTTP status code
         print("Error code: {}".format(e.code))
-
